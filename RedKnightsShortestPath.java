@@ -2,6 +2,7 @@
  * Problem Statement:
  * https://www.hackerrank.com/challenges/red-knights-shortest-path/problem?h_r=next-challenge&h_v=zen&isFullScreen=false
  */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
