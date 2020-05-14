@@ -21,7 +21,7 @@ public class SpriralMatrixV2 {
 		if(ie > 0)
 			je = a[0].length-1;
 		
-        if( ie>=0 && je >=0)
+        	if( ie>=0 && je >=0)
 			while(true){
 				// Right traverse on Top
 				for(int j = js; j <= je; j++)
