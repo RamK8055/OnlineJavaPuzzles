@@ -17,35 +17,39 @@ public class SpriralMatrixV2 {
 		
 		System.out.println("Spiral Matrix: ");
 		int is = 0, ie = a.length-1;
-		int js = 0, je = a[0].length-1;
-		while(true){
-			// Right traverse on Top
-			for(int j = js; j <= je; j++)
-				System.out.print(a[is][j]+" ");
-			is++; 
-			if(je < js) break;
-			
-			
-			// Down traverse on Last
-			for(int i = is; i <= ie; i++)
-				System.out.print(a[i][je]+" ");
-			je--; 
-			if(ie < is) break;
-			
-
-			// Left traverse on Bottom
-			for(int j = je; j >= js; j--)
-				System.out.print(a[ie][j]+" ");
-			ie--; 
-			if(je < js) break;
-			
-
-			// Up traverse on Front
-			for(int i = ie; i >= is; i--)
-				System.out.print(a[i][js]+" ");
-			js++; 
-			if(ie < is) break;
-		}
+		int js = 0, je = 0;
+		if(ie > 0)
+			je = a[0].length-1;
+		
+        if( ie>=0 && je >=0)
+			while(true){
+				// Right traverse on Top
+				for(int j = js; j <= je; j++)
+					System.out.print(a[is][j]+" ");
+				is++; 
+				if(je < js) break;
+				
+				
+				// Down traverse on Last
+				for(int i = is; i <= ie; i++)
+					System.out.print(a[i][je]+" ");
+				je--; 
+				if(ie < is) break;
+				
+	
+				// Left traverse on Bottom
+				for(int j = je; j >= js; j--)
+					System.out.print(a[ie][j]+" ");
+				ie--; 
+				if(je < js) break;
+				
+	
+				// Up traverse on Front
+				for(int i = ie; i >= is; i--)
+					System.out.print(a[i][js]+" ");
+				js++; 
+				if(ie < is) break;
+			}
 	}
 }
 
