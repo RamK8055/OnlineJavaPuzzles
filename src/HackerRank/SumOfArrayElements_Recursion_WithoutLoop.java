@@ -1,3 +1,5 @@
+package HackerRank;
+
 //Use recursive instead of using loop - sum of element in array
 public class SumOfArrayElements_Recursion_WithoutLoop {
 	static int sumArray(int[] array, int n) {
